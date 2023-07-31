@@ -37,6 +37,7 @@ jobs:
         with:
           static_site_generator: sveltekit
           token: ${{ env.AUTH_TOKEN }}
+          enablement: true
 
       - name: Restore cache
         uses: actions/cache@v3
