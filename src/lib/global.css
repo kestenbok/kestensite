@@ -41,12 +41,20 @@ body {
 	height: 100%;
 }
 
+a {
+	color: var(--font);
+}
+
+a:visited {
+	color: var(--link);
+}
+
 /* Theme */
 :root {
 	--prompt: #6d597a;
 	--error: #d62828;
 	--font: #93a3bc;
-	--link: #003049;
+	--link: #788aa7d3;
 	--background: #1a1b26;
 }
 

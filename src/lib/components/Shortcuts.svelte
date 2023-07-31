@@ -1,11 +1,25 @@
 <script lang="ts">
-	import { clear } from '$lib/terminal/output.store';
+	import { terminalController } from '$lib/terminal/terminal.store';
 
 	function handleShortcuts(event: KeyboardEvent) {
-		if (event.key.toLowerCase() === 'l' && event.ctrlKey) {
+		if (keyIs(event.key, 'l') && event.ctrlKey) {
 			event.preventDefault();
-			clear();
+			terminalController.clear();
 		}
+
+		if (keyIs(event.key, 't') && event.ctrlKey) {
+			event.preventDefault();
+			terminalController.open();
+		}
+
+		if (keyIs(event.key, 'q') && event.ctrlKey) {
+			event.preventDefault();
+			terminalController.close();
+		}
+	}
+
+	function keyIs(key: string, is: string) {
+		return key.toLowerCase() === is;
 	}
 </script>
 
