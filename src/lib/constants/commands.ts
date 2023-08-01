@@ -9,5 +9,6 @@ export const COMMANDS = {
 	SOURCE: 'source',
 	SOURCE_SHORT: 'src',
 	WHAT_IM_LOOKING_FOR: 'wilf',
+	CV: 'cv',
 	EXIT: 'exit'
 } as const;

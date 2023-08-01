@@ -33,6 +33,10 @@
 				terminalController.write(i18n.experience);
 				break;
 
+			case COMMANDS.CV:
+				window.open('/docs/cv.pdf', "__blank");
+				break;
+
 			case COMMANDS.CONTACT:
 				terminalController.write(i18n.contact);
 				break;
@@ -52,6 +56,7 @@
 			case COMMANDS.HELP:
 				terminalController.write('about             Get to know me better');
 				terminalController.write('experience        Learn about my previous job experience');
+				terminalController.write('cv                Take a look at my CV');
 				terminalController.write('wilf              ???');
 				terminalController.write('contact           Get in touch');
 				terminalController.write('github | gh       Open my GitHub account');
