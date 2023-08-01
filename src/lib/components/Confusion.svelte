@@ -1,5 +1,5 @@
 <script>
-	import { terminalController, terminal } from '$lib/terminal/terminal.store';
+	import { terminalController } from '$lib/terminal/terminal.store';
 </script>
 
 <div class="confusion-container">
@@ -14,5 +14,9 @@
 
 		justify-content: center;
 		align-items: center;
+	}
+
+	button {
+		margin-top: 0.5rem;
 	}
 </style>

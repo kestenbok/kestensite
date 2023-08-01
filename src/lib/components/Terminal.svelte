@@ -89,10 +89,6 @@
 		width: 100%;
 	}
 
-	button {
-		margin-top: 0.5rem;
-	}
-
 	input:-webkit-autofill,
 	input:-webkit-autofill:hover,
 	input:-webkit-autofill:focus,
