@@ -89,6 +89,7 @@
 		width: 100%;
 	}
 
+	/* Fix Chrome's ugly autocomplete styling */
 	input:-webkit-autofill,
 	input:-webkit-autofill:hover,
 	input:-webkit-autofill:focus,
@@ -108,6 +109,24 @@
 		overflow-y: scroll;
 		max-height: 50vh;
 		padding: 0 0.5rem;
+	}
+
+	/* Fix Chrome's ugly scrollbar */
+	.output::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+		border-radius: 0.6rem;
+		background-color: transparent;
+	}
+
+	.output::-webkit-scrollbar {
+		width: 0.8rem;
+		background-color: transparent;
+	}
+
+	.output::-webkit-scrollbar-thumb {
+		border-radius: 0.6rem;
+		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+		background-color: #555;
 	}
 
 	.prompt {
