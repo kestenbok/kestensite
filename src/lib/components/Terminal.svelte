@@ -34,7 +34,7 @@
 				break;
 
 			case COMMANDS.CV:
-				window.open('/docs/cv.pdf', "__blank");
+				window.open('/kestensite/docs/cv.pdf', '__blank');
 				break;
 
 			case COMMANDS.CONTACT:
